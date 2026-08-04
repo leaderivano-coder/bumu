@@ -1,0 +1,10 @@
+{
+  "name": "Bumu Microfinance",
+  "description": "The official web platform for Bumu Microfinance Company Ltd, a licensed Tier IV Microfinance Institution in Uganda, featuring loan products, interactive repayment calculator, branch locations, and dynamic WhatsApp support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

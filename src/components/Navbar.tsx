@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Landmark, Info, ClipboardList, ShieldCheck, Sun, Moon, Home } from 'lucide-react';
+import { Menu, X, Landmark, Info, ClipboardList, ShieldCheck, Sun, Moon, Home, Briefcase } from 'lucide-react';
 import BumuLogo from './BumuLogo';
 
 interface NavbarProps {
@@ -18,6 +18,7 @@ export default function Navbar({ currentTab, setTab, darkMode, onToggleDarkMode 
     { id: 'services', label: 'Services', icon: ClipboardList },
     { id: 'loans_contacts', label: 'Loans Products & Contacts', icon: Landmark },
     { id: 'insurance', label: 'Insurance', icon: ShieldCheck },
+    { id: 'careers', label: 'Careers', icon: Briefcase },
   ];
 
   return (
@@ -87,7 +88,7 @@ export default function Navbar({ currentTab, setTab, darkMode, onToggleDarkMode 
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-900 dark:text-slate-100 hover:bg-yellow-400 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0047ab] cursor-pointer"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-900 dark:text-slate-100 hover:bg-yellow-400 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0047ab]"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >

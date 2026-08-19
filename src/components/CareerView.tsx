@@ -222,7 +222,7 @@ export default function CareerView() {
               </a>
 
               <a 
-                href="ssenjobesamuel@gmail.com" 
+                href="mailto:ssenjobesamuel@://gmail.com Application Inquiry" 
                 className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-sm rounded-xl border border-white/20 transition-all duration-200 flex items-center gap-2 cursor-pointer"
               >
                 <Mail className="h-4 w-4 text-[#ffd700]" />
@@ -651,7 +651,7 @@ export default function CareerView() {
               <div className="p-4 bg-slate-950/60 border border-slate-800 rounded-xl flex items-start gap-3 text-xs text-slate-400">
                 <FileText className="h-4 w-4 text-[#ffd700] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Tip:</strong> After submitting this quick profile, you may also email your detailed CV and copies of your National ID / academic papers to <strong className="text-white">careers@bumucfc.co.ug</strong>.
+                  <strong>Tip:</strong> After submitting this quick profile, you may also email your detailed CV and copies of your National ID / academic papers to <strong className="text-white">bumucentralfinanceco@gmail.com</strong>.
                 </span>
               </div>
 

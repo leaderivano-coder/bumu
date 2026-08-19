@@ -623,6 +623,8 @@ export default function CareerView() {
                     onChange={(e) => setFormData({ ...formData, experienceYears: e.target.value })}
                     className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-white text-sm focus:outline-hidden focus:border-[#ffd700] transition-colors"
                   >
+                    <option value="0  years S.6 Certificate">0 years experienced S.6 Certificate</option>
+
                     <option value="Fresh Graduate / Entry Level">Fresh Graduate / Entry Level</option>
                     <option value="1-2 years">1–2 years in microfinance or sales</option>
                     <option value="3-5 years">3–5 years experienced</option>
@@ -693,8 +695,8 @@ export default function CareerView() {
             <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm">HR Inquiries Line</h4>
             <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">Speak directly with our human resource team:</p>
             <div className="text-xs font-mono font-bold text-slate-900 dark:text-white mt-1 space-y-0.5">
-              <div>0772 322 931</div>
-              <div>0756 811 506</div>
+              <div>0702 851 063</div>
+              <div>0754 064 499</div>
             </div>
           </div>
         </div>
@@ -706,7 +708,7 @@ export default function CareerView() {
           <div>
             <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm">Physical Drop-off</h4>
             <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
-              Genesis Plaza, Container Village, 2nd Floor, Room G2-10, Nakivubo Rd, Kampala.
+              Genesis Plaza, Nansana opposite ngabo stage Room B4 second floor Njovu Complex, Container Village, 2nd Floor, Room G2-10, Nakivubo Rd, Kampala.
             </p>
           </div>
         </div>

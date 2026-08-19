@@ -504,7 +504,7 @@ export default function CareerView() {
               Submit Your Job Application
             </h2>
             <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
-              Fill out your contact profile below or email your CV directly to <span className="text-[#ffd700] font-mono">careers@bumucfc.co.ug</span>. Our HR team reviews all submissions within 48 hours.
+              Fill out your contact profile below or email your CV directly to <span className="text-[#ffd700] font-mono">bumucentralfinanceco@gmail.com</span>. Our HR team reviews all submissions within 48 hours.
             </p>
           </div>
 
@@ -559,7 +559,7 @@ export default function CareerView() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g. 0772 123 456"
+                    placeholder="e.g. 0754064499"
                     className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-white text-sm placeholder-slate-500 focus:outline-hidden focus:border-[#ffd700] transition-colors"
                   />
                 </div>
@@ -608,7 +608,7 @@ export default function CareerView() {
                   >
                     <option value="Genesis Plaza (Container Village, Kampala)">Genesis Plaza (Container Village, Kampala)</option>
                     <option value="Donata Plaza (Kafumbe Mukasa Road, Kisenyi)">Donata Plaza (Kafumbe Mukasa Road, Kisenyi)</option>
-                    <option value="Nansana Branch (Wakiso)">Nansana Branch (Wakiso)</option>
+                    <option value="Nansana Branch (Hoima road  opposite Ngabo Stage)">Nansana Branch (Hoima road  opposite Ngabo Stage)</option>
                     <option value="Flexible / Field Outreach Across Kampala">Flexible / Field Outreach Across Kampala</option>
                   </select>
                 </div>
@@ -682,7 +682,7 @@ export default function CareerView() {
             <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm">HR Careers Desk</h4>
             <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">Direct email for CV and document submissions:</p>
             <a href="mailto:careers@bumucfc.co.ug" className="text-xs font-mono font-bold text-[#0047ab] dark:text-blue-400 hover:underline mt-1 block">
-              careers@bumucfc.co.ug
+              bumucentralfinanceco@gmail.com
             </a>
           </div>
         </div>
@@ -697,6 +697,7 @@ export default function CareerView() {
             <div className="text-xs font-mono font-bold text-slate-900 dark:text-white mt-1 space-y-0.5">
               <div>0702 851 063</div>
               <div>0754 064 499</div>
+              <div>0707 950 229 Nansana branch</div>
             </div>
           </div>
         </div>

@@ -222,7 +222,7 @@ export default function CareerView() {
               </a>
 
               <a 
-                href="mailto:careers@bumucfc.co.ug?subject=General%20Career%20Inquiry%20-%20Bumu%20Microfinance" 
+                href="ssenjobesamuel@gmail.com" 
                 className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-sm rounded-xl border border-white/20 transition-all duration-200 flex items-center gap-2 cursor-pointer"
               >
                 <Mail className="h-4 w-4 text-[#ffd700]" />

@@ -9,6 +9,7 @@ import BranchesView from './components/BranchesView';
 import ContactView from './components/ContactView';
 import ApplyView from './components/ApplyView';
 import InsuranceView from './components/InsuranceView';
+import CareerView from './components/CareerView';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import BackToTopButton from './components/BackToTopButton';
@@ -42,19 +43,19 @@ const FAQ_ITEMS = [
   {
     id: 'faq-2',
     question: "What are your interest rates and fees?",
-    answer: "We offer highly competitive and flexible repayment terms with absolutely zero hidden administration fees. Each facility is structured individually in alignment with your specific business cash flow cycles and commercial capacity.",
+    answer: "We offer highly competitive and flexible repayment terms with absolutely zero hidden administration fees. Each facility is structured individually in alignment with your specific business needs.",
     category: "Rates & Fees"
   },
   {
     id: 'faq-3',
     question: "Do you require physical collateral (like land titles)?",
-    answer: "No, land titles are not mandatory. We understand that micro-retailers may not own land. We accept alternative securities, including business stock pledges, guarantor recommendations, and verified market stall ownership.",
+    answer: "No, land titles are not mandatory. We understand that micro-retailers may not own land. We accept alternative securities, including business stock pledges, guarantor recommendations, and community endorsements.",
     category: "Collateral & Security"
   },
   {
     id: 'faq-4',
     question: "Is Bumu Microfinance a licensed bank?",
-    answer: "Bumu Microfinance is a Tier IV Microfinance Institution licensed by the Ministry of Finance, Planning and Economic Development (MoFPED). We do not operate as a fully commercial tier I retail bank.",
+    answer: "Bumu Microfinance is a Tier IV Microfinance Institution licensed by the Ministry of Finance, Planning and Economic Development (MoFPED). We do not operate as a fully commercial tier I bank but as a regulated microfinance provider.",
     category: "Licensing & Safety"
   },
   {
@@ -190,11 +191,11 @@ export default function App() {
                         Empowering SMEs with essential working capital since 2009
                       </h2>
                       <p className="text-blue-100 text-sm md:text-base leading-relaxed max-w-2xl">
-                        At Bumu Microfinance, we believe that formal financial structures shouldn't lock out hard-working market vendors. We provide fast-tracked credit and essential coaching to grow your enterprise safely.
+                        At Bumu Microfinance, we believe that formal financial structures shouldn't lock out hard-working market vendors. We provide fast-tracked credit and essential coaching to unlock their potential.
                       </p>
                       <div className="flex flex-wrap gap-4 pt-4">
                         <button 
-                          onClick={() => setTab('loans')}
+                          onClick={() => setTab('loans_contacts')}
                           className="px-6 py-3 bg-[#ffd700] hover:bg-yellow-400 text-slate-950 font-bold rounded-xl shadow-md transition-colors duration-200 flex items-center gap-2 cursor-pointer"
                         >
                           <span>Explore Loan Products</span>
@@ -292,10 +293,10 @@ export default function App() {
                           MoFPED Licensing
                         </h4>
                         <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm leading-relaxed font-sans">
-                          Bumu Microfinance is fully licensed by the <strong>Ministry of Finance, Planning and Economic Development (MoFPED)</strong>. This guarantees fully transparent operations, high consumer protection standards, ethical lending practices, and absolute compliance.
+                          Bumu Microfinance is fully licensed by the <strong>Ministry of Finance, Planning and Economic Development (MoFPED)</strong>. This guarantees fully transparent operations and regulatory compliance.
                         </p>
                       </div>
-                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-[#0047ab] dark:text-blue-400 font-bold uppercase">
+                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-[#0047ab] dark:text-blue-400 font-bold">
                         <span>Licensed Partner</span>
                         <span className="px-2 py-0.5 bg-blue-100 dark:bg-blue-950 text-xs rounded-md">MoFPED</span>
                       </div>
@@ -311,10 +312,10 @@ export default function App() {
                           FIA Partnership
                         </h4>
                         <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm leading-relaxed font-sans">
-                          Partnered with the <strong>Financial Intelligence Authority (FIA)</strong> to ensure strict anti-money laundering compliance, transparent reporting, and complete financial integrity across all operations.
+                          Partnered with the <strong>Financial Intelligence Authority (FIA)</strong> to ensure strict anti-money laundering compliance, transparent reporting, and complete financial integrity.
                         </p>
                       </div>
-                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-indigo-600 dark:text-indigo-400 font-bold uppercase">
+                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-indigo-600 dark:text-indigo-400 font-bold">
                         <span>Compliance Partner</span>
                         <span className="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-950 text-xs rounded-md">FIA Partner</span>
                       </div>
@@ -330,10 +331,10 @@ export default function App() {
                           Liberty Insurance Partnership
                         </h4>
                         <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm leading-relaxed font-sans">
-                          In collaboration with <strong>Liberty Insurance Uganda</strong>, we offer highly specialized, accessible underwriting solutions. Our customers benefit from school fees micro-insurance policies and business safety products designed to hedge against unpredictable life events.
+                          In collaboration with <strong>Liberty Insurance Uganda</strong>, we offer highly specialized, accessible underwriting solutions. Our customers benefit from school fees protection and business security.
                         </p>
                       </div>
-                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-bold uppercase">
+                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">
                         <span>Underwriting Partner</span>
                         <span className="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-xs rounded-md">Liberty</span>
                       </div>
@@ -354,13 +355,13 @@ export default function App() {
                         {/* Banks tags */}
                         <div className="flex flex-wrap gap-2 mt-3">
                           {["Centenary Bank", "dfcu Bank", "Equity Bank", "Finance Trust Bank", "Stanbic Bank"].map((bank, bidx) => (
-                            <span key={bidx} className="bg-amber-100/60 dark:bg-amber-950/30 text-amber-800 dark:text-amber-300 text-[10px] font-semibold px-2 py-1 rounded-md border border-amber-200/40 font-mono">
+                            <span key={bidx} className="bg-amber-100/60 dark:bg-amber-950/30 text-amber-800 dark:text-amber-300 text-[10px] font-semibold px-2 py-1 rounded-md border border-amber-200 dark:border-amber-800/50">
                               {bank}
                             </span>
                           ))}
                         </div>
                       </div>
-                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-amber-600 dark:text-amber-400 font-bold uppercase">
+                      <div className="mt-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-amber-600 dark:text-amber-400 font-bold">
                         <span>Clearing Intermediaries</span>
                         <span className="px-2 py-0.5 bg-amber-100 dark:bg-amber-950 text-xs rounded-md">Partner Banks</span>
                       </div>
@@ -391,7 +392,7 @@ export default function App() {
                           </p>
                         </div>
                         <div className="mt-6 border-t border-slate-100 dark:border-slate-800/80 pt-4 flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full bg-amber-500/15 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400 font-display font-black text-xs flex items-center justify-center border border-amber-200/50 dark:border-amber-800/60 flex-shrink-0">
+                          <div className="w-10 h-10 rounded-full bg-amber-500/15 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400 font-display font-black text-xs flex items-center justify-center">
                             {t.avatar}
                           </div>
                           <div>
@@ -501,7 +502,7 @@ export default function App() {
                     ))}
                   </ul>
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4 mt-6 text-xs text-slate-300 leading-relaxed">
-                    <strong>Have questions about these requirements?</strong> If you do not have business registrations or guarantors, visit any branch or speak to our officer. We can explore alternative guarantees!
+                    <strong>Have questions about these requirements?</strong> If you do not have business registrations or guarantors, visit any branch or speak to our officer. We can explore alternatives!
                   </div>
                 </div>
 
@@ -525,7 +526,7 @@ export default function App() {
                       value={faqSearchQuery}
                       onChange={(e) => setFaqSearchQuery(e.target.value)}
                       placeholder="Search FAQ questions or keywords..."
-                      className="block w-full pl-10 pr-10 py-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-hidden focus:ring-1 focus:ring-[#0047ab] dark:focus:ring-blue-500 focus:border-[#0047ab] dark:focus:border-blue-500 transition-colors duration-200 shadow-xs"
+                      className="block w-full pl-10 pr-10 py-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-hidden focus:border-[#0047ab] focus:ring-1 focus:ring-[#0047ab] transition-all"
                     />
                     {faqSearchQuery && (
                       <button
@@ -575,7 +576,7 @@ export default function App() {
                             <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">
                               {faq.question}
                             </h4>
-                            <span className="text-[9px] font-mono font-bold text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 px-2 py-0.5 rounded-sm shrink-0">
+                            <span className="text-[9px] font-mono font-bold text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 px-2 py-1 rounded-md whitespace-nowrap">
                               {faq.category}
                             </span>
                           </div>
@@ -654,6 +655,20 @@ export default function App() {
               </div>
 
               <InsuranceView />
+            </motion.div>
+          )}
+
+          {/* ================= CAREERS VIEW ================= */}
+          {tab === 'careers' && (
+            <motion.div
+              key="careers"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.4 }}
+              className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+            >
+              <CareerView />
             </motion.div>
           )}
 

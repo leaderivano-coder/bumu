@@ -475,7 +475,7 @@ export default function CareerView() {
                   </a>
 
                   <a
-                    href={`mailto:bumucentralfinanceco@gmail.com?subject=Application%20for%20${encodeURIComponent(selectedJob.title)}`}
+                    href={`mailto:bumucentralfinanceco@gmail.com`}
                     className="py-3.5 px-6 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold text-sm rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2 transition-colors"
                   >
                     <Mail className="h-4 w-4 text-[#0047ab] dark:text-purple-400" />

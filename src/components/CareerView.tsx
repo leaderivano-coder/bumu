@@ -681,7 +681,7 @@ export default function CareerView() {
           <div>
             <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm">HR Careers Desk</h4>
             <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">Direct email for CV and document submissions:</p>
-            <a href="mailto:careers@bumucfc.co.ug" className="text-xs font-mono font-bold text-[#0047ab] dark:text-blue-400 hover:underline mt-1 block">
+            <a href="mailto:bumucentralfinanceco@gmail.com" className="text-xs font-mono font-bold text-[#0047ab] dark:text-blue-400 hover:underline mt-1 block">
               bumucentralfinanceco@gmail.com
             </a>
           </div>
